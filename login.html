@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admin Login - Planify</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* same styling as before */
+body {
+  background-color: #0F172A;
+  font-family: 'Inter', sans-serif;
+  color: #E5E7EB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.login-box {
+  background-color: #1E293B;
+  padding: 30px;
+  border-radius: 12px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: none;
+  background-color: #334155;
+  color: #fff;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #A78BFA;
+  color: #0F172A;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+}
+button:hover {
+  background-color: #C084FC;
+}
+</style>
+</head>
+<body>
+  <div class="login-box">
+    <h2>Admin Login</h2>
+    <form action="login.php" method="POST" autocomplete="on">
+      <input type="email" name="email" placeholder="Email" required autocomplete="email"><br>
+      <input type="password" name="password" placeholder="Password" required autocomplete="current-password"><br>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</body>
+</html>
