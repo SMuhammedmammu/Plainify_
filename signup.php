@@ -1,6 +1,6 @@
 <?php
 // Connect to database
-$conn = new mysqli("localhost", "root", "123456", "planify_db");
+$conn = new mysqli("localhost", "root", "", "planify_db");
 
 // Check connection
 if ($conn->connect_error) {
@@ -22,3 +22,4 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 ?>
+
